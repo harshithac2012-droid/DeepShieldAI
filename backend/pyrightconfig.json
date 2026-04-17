@@ -1,0 +1,9 @@
+{
+  "include": ["app", "aasist"],
+  "extraPaths": [".", "./aasist"],
+  "pythonVersion": "3.11",
+  "reportMissingImports": "warning",
+  "reportMissingModuleSource": "none",
+  "venvPath": ".",
+  "venv": ".venv"
+}

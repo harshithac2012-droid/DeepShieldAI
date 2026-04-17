@@ -1,0 +1,24 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy
+av
+soundfile
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart
+pydantic>=2.0.0
+# Web Server & Framework
+fastapi[standard]
+uvicorn
+
+# Telephony & Real-time
+twilio
+python-multipart
+
+# Audio Processing & AI
+torch
+torchaudio
+numpy
+
+# Required for μ-law to PCM conversion (for Python < 3.13)
+# audioop is built-in for you, but we list other dependencies

@@ -1,0 +1,40 @@
+# Root .gitignore for VoiceGuardAI
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/*.so
+**/.venv/
+**/venv/
+**/env/
+**/.env
+
+# Node.js
+**/node_modules/
+**/dist/
+**/build/
+.npm
+yarn-error.log
+
+# Audio files (temporary or logs)
+**/test_*.wav
+**/test_*.mp3
+**/last_upload.wav
+**/dummy.wav
+**/*.tmp
+
+# Backend specific
+backend/debug_inference*.py
+backend/test_backend.py
+backend/.env
+
+# Frontend specific
+frontend/web-app/dist/
+frontend/web-app/.env
