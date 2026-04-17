@@ -1,40 +1,75 @@
-# Root .gitignore for VoiceGuardAI
+# Root .gitignore for DeepShieldAI
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # VS Code
 .vscode/
+*.code-workspace
+.history/
 
-# Python
+# Python / Backend
 **/__pycache__/
 **/*.py[cod]
 **/*.so
 **/.venv/
 **/venv/
 **/env/
+**/ENV/
+**/instance/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.pyre/
 **/.env
+**/local_settings.py
+**/*.db
+**/*.sqlite3
+**/*.log
 
-# Node.js
+# Node.js / Frontend
 **/node_modules/
 **/dist/
 **/build/
-.npm
-yarn-error.log
+**/out/
+**/.next/
+**/.npm
+**/jspm_packages/
+**/yarn-error.log
+**/yarn-debug.log*
+**/.pnp*
+**/.pnpm-debug.log*
 
-# Audio files (temporary or logs)
+# Audio & Temporary Files
 **/test_*.wav
 **/test_*.mp3
 **/last_upload.wav
 **/dummy.wav
 **/*.tmp
+**/uploads/
+**/logs/
 
-# Backend specific
+# Backend Specific
 backend/debug_inference*.py
 backend/test_backend.py
 backend/.env
+backend/.database
 
-# Frontend specific
+# Frontend Specific
 frontend/web-app/dist/
 frontend/web-app/.env
+frontend/web-app/.env.local
+frontend/web-app/.env.development.local
+frontend/web-app/.env.test.local
+frontend/web-app/.env.production.local
+frontend/web-app/npm-debug.log*
+
+# Misc
+.cache/
+.DS_Store
